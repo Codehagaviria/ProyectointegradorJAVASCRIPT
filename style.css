@@ -1,0 +1,74 @@
+/* Asegura que el body y html ocupen toda la altura de la ventana */
+body {
+    height: 100%;  /* El body debe ocupar toda la altura disponible */
+    margin: 0;     /* Elimina el margen por defecto */
+    padding: 0;    /* Elimina el relleno por defecto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Usamos flexbox para organizar los elementos */
+body {
+    display: flex;
+    flex-direction: column;  /* Organiza los elementos en una columna */
+    min-height: 100vh;        /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* La sección principal debe ocupar el espacio disponible */
+main {
+    flex-grow: 1;  /* Hace que el main ocupe todo el espacio disponible */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Estilos de los enlaces y la imagen en el footer */
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ccc;
+}
+
+/* Para las imágenes fluidas */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección de contenido con suficiente espacio para el footer */
+section.container {
+    flex-grow: 1; /* Hace que la sección ocupe todo el espacio disponible */
+    padding-bottom: 120px; /* Añadimos espacio para evitar que el footer se solape con el contenido */
+}
+
+/* Estilos para los íconos en el footer */
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+
+.text-pequeño {
+    font-size: 0.55rem;
+}
+
